@@ -13,6 +13,10 @@ li {
   color: #1f41bb;
 }
 button {
-  background-color: transparent;
+  outline: none;
   cursor: pointer;
+}
+
+.App {
+  background-color: black;
 }

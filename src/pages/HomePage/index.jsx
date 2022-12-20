@@ -1,7 +1,7 @@
 import "./home.css";
 import perfil from "../../assets/foto.png";
 import React from "react";
-
+import Social from "../../components/Social";
 import Header from "../../components/Header";
 
 function HomePage() {
@@ -15,16 +15,15 @@ function HomePage() {
           </div>
         </div>
         <div className="info">
-          <h1>teste</h1>
+          <h1>WEB DEVELOPER</h1>
           <p>
-            Do excepteur reprehenderit voluptate id ea ipsum do. Esse id quis
-            ullamco occaecat adipisicing laboris. Commodo velit do ad deserunt
-            amet est laboris adipisicing labore fugiat ullamco elit. Et cillum
-            in veniam minim quis incididunt. Consectetur amet est ad
-            reprehenderit deserunt. Duis pariatur nostrud sint et nulla mollit
-            elit voluptate est tempor aute sint ullamco. Laborum irure dolore
-            quis consectetur duis cillum incididunt.
+            Olá, me chamo Paulo Felipe. Nostrud consectetur non adipisicing
+            Lorem laboris officia irure consequat cillum nostrud. Laborum qui
+            dolor irure consectetur exercitation velit ex cupidatat sunt
+            proident consectetur laborum labore. Ipsum enim quis consectetur ea
+            est nisi eiusmod nostrud magna amet nulla.
           </p>
+          <Social />
         </div>
       </main>
     </div>

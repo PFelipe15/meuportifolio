@@ -2,7 +2,7 @@ import "./header.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import React from "react";
 import LogoName from "../LogoName";
-
+import { Link } from "react-router-dom";
 function Header() {
   function getMenu() {
     let menu = document.querySelector(".header-container .nav .menu-Mobile");
@@ -24,12 +24,12 @@ function Header() {
       </div>
       <nav className="nav">
         <ul className="menu">
-          <a href="#">
+          <Link to={'/'}>
             <li> MENU</li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to={'/Projetos'}>
             <li> PROJETOS</li>
-          </a>
+          </Link>
           <a href="#">
             <li> CONTATOS</li>
           </a>

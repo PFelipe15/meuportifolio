@@ -1,0 +1,12 @@
+.social-container {
+  margin-top: 60px;
+  display: flex;
+  width: 160px;
+  height: 35px;
+  justify-content: space-around;
+}
+
+.social-container a:hover {
+  transition: transform 1.2s;
+  transform: scale(1.1);
+}
