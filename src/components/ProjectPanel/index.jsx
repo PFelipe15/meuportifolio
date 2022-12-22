@@ -1,15 +1,17 @@
 import "./projectpanel.css";
 
 import React from "react";
+import { Link } from "react-router-dom";
+ 
 
-// import { Container } from './styles';
-
-function ProjectPanel({ titulo, image }) {
+function ProjectPanel({ titulo, image, id }) {
   return (
     <div className="project-container">
       <h1>{titulo}</h1>
       <img src={image} alt="imageRepository" />
-      <button>Ver mais</button>
+      <Link to={`/details/${id}`} params>
+        <button>Ver mais</button>
+      </Link>
     </div>
   );
 }

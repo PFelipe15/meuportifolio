@@ -1,0 +1,149 @@
+.container-detailsProjectPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Poppins";
+  flex-direction: column;
+}
+.main-details {
+  display: flex;
+  margin-top: 15px;
+  width: 80%;
+  height: 720px;
+}
+
+.img-project,
+.info-project {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.img-project {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img-project img {
+  width: 90%;
+  height: 90%;
+}
+.tecnologia-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  width: 80%;
+}
+
+.title-tecnologia {
+  text-transform: uppercase;
+  color: #1f41bb;
+}
+
+.title-tecnologia:hover {
+  color: #fff;
+}
+.img-project:hover {
+  transition: transform 1.6s;
+  transform: scale(1.01);
+}
+
+.info-project {
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.info-project h1 {
+  text-transform: uppercase;
+  font-size: 4.6rem;
+  color: #1f41bb;
+}
+
+.info-project h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.link-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.link-container a {
+  border-radius: 15px;
+  width: 50%;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #1f41bb;
+}
+
+.link-container a:hover {
+  transition: transform 1.5s;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1400px) {
+  .main-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .info-project {
+    width: 100%;
+    align-items: center;
+  }
+
+  .info-project h1 {
+    font-size: 2.5rem;
+    
+  }
+  .img-project {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .link-container a {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .main-details {
+    gap: 70px;
+  }
+  .tecnologia-container {
+    height: 300px;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .title-tecnologia {
+    text-transform: uppercase;
+    color: #1f41bb;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-details {
+    gap: 150px;
+  }
+
+  @media screen and (max-width: 330px) {
+    .main-details {
+      gap: 250px;
+    }
+}
+}

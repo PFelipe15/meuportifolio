@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 function Header() {
   function getMenu() {
     let menu = document.querySelector(".header-container .nav .menu-Mobile");
-    let menuDesktop = document.querySelector(".header-container .nav .menu-Desktop");
+    let menuDesktop = document.querySelector(
+      ".header-container .nav .menu-Desktop"
+    );
     let logo = document.querySelector(".header-container .logo-Mobile");
     if (menu.style.display == "flex") {
       menu.style.display = "none";
@@ -24,10 +26,11 @@ function Header() {
       </div>
       <nav className="nav">
         <ul className="menu">
-          <Link to={'/'}>
+          <Link to={"/"}>
             <li> MENU</li>
           </Link>
-          <Link to={'/Projetos'}>
+
+          <Link to={"/Projetos"}>
             <li> PROJETOS</li>
           </Link>
           <a href="#">
@@ -35,11 +38,7 @@ function Header() {
           </a>
         </ul>
 
-       
-
-        <div className="menu-hidden">
-           
-        </div>
+        <div className="menu-hidden"></div>
       </nav>
     </header>
   );
