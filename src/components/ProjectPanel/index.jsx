@@ -9,7 +9,7 @@ function ProjectPanel({ titulo, image, id }) {
     <div className="project-container">
       <h1>{titulo}</h1>
       <img src={image} alt="imageRepository" />
-      <Link to={`/details/${id}`} params>
+      <Link to={`/Details/${id}`} params>
         <button>Ver mais</button>
       </Link>
     </div>

@@ -33,9 +33,9 @@ function Header() {
           <Link to={"/Projetos"}>
             <li> PROJETOS</li>
           </Link>
-          <a href="#">
+          <Link to={'/Contatos'}>
             <li> CONTATOS</li>
-          </a>
+          </Link>
         </ul>
 
         <div className="menu-hidden"></div>
