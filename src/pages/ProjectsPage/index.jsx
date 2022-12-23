@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import data from "../../services/dataProjects";
-import foto from "../../assets/corona.png";
 import "./projects.css";
 import ProjectPanel from "../../components/ProjectPanel";
 function ProjectsPage() {
