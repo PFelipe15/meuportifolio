@@ -27,7 +27,9 @@
   font-weight: 600;
   background: transparent;
 }
-
+.header-container .nav ul a li {
+  color: #1f41bb;
+}
 .header-container .nav ul a li:hover {
   transition: transform 1.4s, color 1.3s;
   transform: scale(1.1);
@@ -45,7 +47,6 @@
   .header-container {
     height: 200px;
     flex-direction: column;
-     
   }
   .header-container .logo,
   .header-container .nav {
@@ -54,14 +55,12 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-   
   }
 
   .header-container .nav ul {
     width: 100%;
     justify-content: center;
     align-items: center;
- 
   }
   .header-container .nav ul li {
     font-size: 1.2rem;

@@ -1,23 +1,20 @@
 import "./header.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import React from "react";
+
+import React, { useState } from "react";
 import LogoName from "../LogoName";
 import { Link } from "react-router-dom";
+import { NavigationContext } from "../../contexts/navContext";
+import { useContext, useEffect } from "react";
 function Header() {
-  function getMenu() {
-    let menu = document.querySelector(".header-container .nav .menu-Mobile");
-    let menuDesktop = document.querySelector(
-      ".header-container .nav .menu-Desktop"
-    );
-    let logo = document.querySelector(".header-container .logo-Mobile");
-    if (menu.style.display == "flex") {
-      menu.style.display = "none";
-      logo.style.display = "flex";
-    } else {
-      menu.style.display = "flex";
-      logo.style.display = "none";
+  const { navigation, setNavigation } = useContext(NavigationContext);
+
+  useEffect(() => {
+    if (navigation >= 0) {
+      let navs = document.querySelectorAll(".header-container .nav ul a li ");
+      navs[navigation].style.color = "white";
+      console.log(navs[navigation]);
     }
-  }
+  });
 
   return (
     <header className="header-container">
@@ -27,14 +24,35 @@ function Header() {
       <nav className="nav">
         <ul className="menu">
           <Link to={"/"}>
-            <li> MENU</li>
+            <li
+              onClick={() => {
+                setNavigation(0);
+              }}
+            >
+              {" "}
+              MENU
+            </li>
           </Link>
 
           <Link to={"/Projetos"}>
-            <li> PROJETOS</li>
+            <li
+              onClick={() => {
+                setNavigation(1);
+              }}
+            >
+              {" "}
+              PROJETOS
+            </li>
           </Link>
-          <Link to={'/Contatos'}>
-            <li> CONTATOS</li>
+          <Link to={"/Contatos"}>
+            <li
+              onClick={() => {
+                setNavigation(2);
+              }}
+            >
+              {" "}
+              CONTATOS
+            </li>
           </Link>
         </ul>
 

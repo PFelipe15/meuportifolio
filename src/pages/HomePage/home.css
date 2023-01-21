@@ -69,16 +69,11 @@
 .info p {
   font-size: 1.3rem;
   font-weight: 600;
-  text-align: center;
-}
-
-.lg a {
-  color: #614848;
+  text-align: justify;
 }
 
 .lg a:hover {
   color: #1f41bb;
- 
 }
 @media screen and (max-width: 1120px) {
   .container {

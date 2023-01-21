@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import { useParams } from "react-router-dom";
 import "./detailsproject.css";
 import { AiFillGithub } from "react-icons/ai";
+import { GoPlay } from "react-icons/go";
 import data from "../../services/dataProjects";
 function DetailsProjectPage() {
   const { id } = useParams();
@@ -31,10 +32,19 @@ function DetailsProjectPage() {
           <h3>{project.Descricao}</h3>
 
           <div className="link-container">
-            <a href={project.link} target="_blank">
-              Clique aqui para abrir o Repositorio:{" "}
-              <AiFillGithub size={35} color="#fff" />
+            <a href={project.link} target="_blank" className="forGit">
+              Repositorio <AiFillGithub size={35} color="#fff" />
             </a>
+            {project.linkBuild ? (
+              <a
+                href={project.linkBuild}
+                target="_blank"
+                className="forProduction"
+              >
+                Site{""}
+                <GoPlay size={35} color="#fff" />
+              </a>
+            ) : '' }
           </div>
         </div>
       </main>
