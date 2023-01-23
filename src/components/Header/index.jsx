@@ -12,7 +12,7 @@ function Header() {
     if (navigation >= 0) {
       let navs = document.querySelectorAll(".header-container .nav ul a li ");
       navs[navigation].style.color = "white";
-      console.log(navs[navigation]);
+      
     }
   });
 
