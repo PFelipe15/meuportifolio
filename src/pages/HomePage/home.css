@@ -28,6 +28,7 @@
 
 .perfil {
   flex-direction: column;
+ 
 }
 
 .perfil .perfil-blue img {
@@ -37,6 +38,8 @@
   box-shadow: blue 10px 10px 30px;
   transform: translateY(0px);
   animation: float 5s ease-in-out infinite;
+  flex-direction: column;
+  background-color: transparent ;
 }
 
 @keyframes float {
