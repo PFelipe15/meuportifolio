@@ -1,6 +1,7 @@
 import coronaImg from "../assets/Corona.png";
 import automacaoImg from "../assets/automacao.png";
 import quizLogicaImg from "../assets/quizLogica.png";
+import loginPage from "../assets/LangingPage-login.png";
 const data = [
   {
     id: 1,
@@ -22,7 +23,6 @@ const data = [
     linkBuild: null,
     tecnologias: ["Javascript", "Node", "express", "Api", "Puppeter"],
   },
-
   {
     id: 3,
     titulo: "QUIZ ",
@@ -33,6 +33,17 @@ const data = [
     linkBuild: "https://quizlogica.netlify.app/",
     tecnologias: ["Javascript", "React", "ApiContext"],
   },
+  {
+    id: 4,
+    titulo: "Pagina de Login ",
+    img: loginPage,
+    Descricao:
+      " Essa é uma Landing page, uma pagina estática de login onde treinei meus conhecimentos em css e Html, minha primeira pagina de login supostamente de uma compania de acessoria que se chama Dev&Cia, não foi ultilizado nenhum framework.",
+    link: "https://github.com/PFelipe15/LoginDevCia",
+    linkBuild: "https://pfelipe15.github.io/LoginDevCia/",
+    tecnologias: ["CSS", "HTML"],
+  },
+  
 ];
 
 export default { data };

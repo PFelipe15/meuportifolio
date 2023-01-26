@@ -5,7 +5,6 @@ import "./projects.css";
 import ProjectPanel from "../../components/ProjectPanel";
 function ProjectsPage() {
   const [projects, setProjects] = useState(data.data);
-
   return (
     <div className="container-projectspage">
       <Header></Header>
