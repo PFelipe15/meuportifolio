@@ -19,13 +19,14 @@
 }
 
 .project-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   width: 80%;
   height: 100%;
   text-align: center;
-  justify-content: center;
  
+  justify-content: flex-start;
+flex-wrap: wrap;
 }
 .title-container {
   display: flex;
