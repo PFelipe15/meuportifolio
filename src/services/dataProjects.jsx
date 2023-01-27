@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 4,
-    titulo: "Pagina de Login ",
+    titulo: "Página de Login ",
     img: loginPage,
     Descricao:
       " Essa é uma Landing page, uma pagina estática de login onde treinei meus conhecimentos em css e Html, minha primeira pagina de login supostamente de uma compania de acessoria que se chama Dev&Cia, não foi ultilizado nenhum framework.",
