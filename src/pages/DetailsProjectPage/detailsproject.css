@@ -38,7 +38,8 @@
   align-items: center;
   gap: 15px;
   justify-content: center;
-  width: 80%;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 .title-tecnologia {

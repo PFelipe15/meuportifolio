@@ -2,6 +2,7 @@ import coronaImg from "../assets/Corona.png";
 import automacaoImg from "../assets/automacao.png";
 import quizLogicaImg from "../assets/quizLogica.png";
 import loginPage from "../assets/LangingPage-login.png";
+import webScraping from "../assets/WebScraping.png";
 const data = [
   {
     id: 1,
@@ -43,7 +44,16 @@ const data = [
     linkBuild: "https://pfelipe15.github.io/LoginDevCia/",
     tecnologias: ["CSS", "HTML"],
   },
-  
+  {
+    id: 5,
+    titulo: "WebScraping Produtos",
+    img: webScraping,
+    Descricao:
+      "Javascript trabalhando com Automação e WebScraping? sim, esse é um projeto de automação. Atravéz do PuppeterJs é possivel raspar informações. esse foi um projeto criado com essa intenção, pelo lado do servidor o usuario em uma requisição pesquisa o nome do produto desejado, o sistema automaticamente faz uma raspagem web de varios produtos com esse nome em determinados sites e as informações são alocadas em um databaseNoSQL onde o usuario tem a maior facilidade para filtrar por preço e pesquisas, pois a palavra chave que é dada no nome do produto pesquisado é alocado também como uma propiedade da collection no database.",
+    link: "https://github.com/PFelipe15/backend.git",
+    linkBuild: null,
+    tecnologias: ["Javascript", "Node", "express", "Api", "Puppeter", "mongoDb", "noSql"],
+  },
 ];
 
 export default { data };
