@@ -28,7 +28,7 @@ function DetailsProjectPage() {
           </div>
         </div>
         <div className="info-project">
-          <h1>{project.titulo}</h1>
+          <h1>{project.titulo } </h1>
           <h3>{project.Descricao}</h3>
 
           <div className="link-container">
