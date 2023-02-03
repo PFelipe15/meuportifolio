@@ -26,6 +26,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 .title-container {
   display: flex;
   width: 100%;
@@ -46,6 +47,8 @@
   .project-list {
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -54,6 +57,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
   }
 }
 
